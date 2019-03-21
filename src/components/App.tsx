@@ -2,7 +2,8 @@ import React from 'react'
 import { GoogleFont, TypographyStyle } from 'react-typography'
 import { useData } from '../hooks'
 import { typography } from '../theme/typography'
-import { Heading } from './atoms'
+import { Container, Heading } from './atoms'
+import { Card } from './molecules'
 import { GlobalStyle, ThemeProvider } from './utility'
 
 export function App() {
@@ -14,8 +15,10 @@ export function App() {
           <GlobalStyle />
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
-          <Heading type="h1">Sofar</Heading>
-          {loading ? 'loading' : <span>{JSON.stringify(data)}</span>}
+          <Container>
+            <Heading type="h1">Sofar</Heading>
+            <Card />
+          </Container>
         </>
       </ThemeProvider>
     </div>

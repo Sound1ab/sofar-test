@@ -64,6 +64,10 @@ export const GlobalStyle = createGlobalStyle`
   /* Text-level semantics
      ========================================================================== */
   
+  h6 {
+    text-transform: uppercase;
+  }
+  
   /**
    * Add the correct text decoration in Chrome, Edge, and Safari.
    */
