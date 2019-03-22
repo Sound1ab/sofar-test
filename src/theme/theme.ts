@@ -10,12 +10,12 @@ export const theme = {
     },
   },
   spacing: {
-    xxl: typography.rhythm(10),
-    xl: typography.rhythm(7),
     l: typography.rhythm(3),
     m: typography.rhythm(1.5),
     s: typography.rhythm(1),
+    xl: typography.rhythm(7),
     xs: typography.rhythm(0.5),
+    xxl: typography.rhythm(10),
     xxs: typography.rhythm(0.25),
   },
 }

@@ -7,21 +7,21 @@ import { CardList } from './CardList'
 const MOCK_EVENTS = [
   {
     date: {
-      dayOfWeek: 'Thursday',
       dayOfMonth: 13,
+      dayOfWeek: 'Thursday',
       month: 'Oct',
     },
-    location: 'Whitechapel',
     genre: 'rock',
+    location: 'Whitechapel',
   },
   {
     date: {
-      dayOfWeek: 'Thursday',
       dayOfMonth: 13,
+      dayOfWeek: 'Thursday',
       month: 'Oct',
     },
-    location: 'Hoxton',
     genre: 'jazz',
+    location: 'Hoxton',
   },
 ]
 const MOCK_TOGGLE = TOGGLES.JAZZ
