@@ -3,23 +3,23 @@
 exports[`CardList.tsx CardList matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-ifAKCX LtvRZ"
+    class="sc-bZQynM bRkGRU"
   >
     <div
-      class="sc-htpNat kmHSBC"
+      class="sc-bxivhb FDbHW"
       data-testid="Card"
     >
       <div
         class="card-cell card-date"
       >
         <h2
-          class="sc-EHOje fBVHip"
+          class="sc-gzVnrw fDlMua"
           type="h2"
         >
           13
         </h2>
         <h6
-          class="sc-bZQynM jheleg"
+          class="sc-htoDjs eWaNkr"
           type="h6"
         >
           Oct
@@ -29,7 +29,7 @@ exports[`CardList.tsx CardList matches snapshot 1`] = `
         class="card-cell card-location"
       >
         <h6
-          class="sc-gzVnrw fDlMua"
+          class="sc-dnqmqq fWMmgG"
           type="h6"
         >
           <span
@@ -39,7 +39,7 @@ exports[`CardList.tsx CardList matches snapshot 1`] = `
           </span>
         </h6>
         <h2
-          class="sc-htoDjs eWaNkr"
+          class="sc-iwsKbI caDdqp"
           type="h2"
         >
           Hoxton

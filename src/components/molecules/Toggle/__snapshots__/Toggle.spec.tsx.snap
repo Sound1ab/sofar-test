@@ -3,14 +3,14 @@
 exports[`Toggle.tsx toggle matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat dlSfFc"
+    class="sc-bxivhb hbJYnJ"
   >
     <button
       class=""
       data-testid="rock"
     >
       <h6
-        class="sc-bxivhb dfiMcp"
+        class="sc-ifAKCX jpeJOs"
         type="h6"
       >
         rock
@@ -21,7 +21,7 @@ exports[`Toggle.tsx toggle matches snapshot 1`] = `
       data-testid="jazz"
     >
       <h6
-        class="sc-ifAKCX jpeJOs"
+        class="sc-EHOje fBVHip"
         type="h6"
       >
         jazz
@@ -32,7 +32,7 @@ exports[`Toggle.tsx toggle matches snapshot 1`] = `
       data-testid="folk"
     >
       <h6
-        class="sc-EHOje fBVHip"
+        class="sc-bZQynM jheleg"
         type="h6"
       >
         folk
@@ -43,7 +43,7 @@ exports[`Toggle.tsx toggle matches snapshot 1`] = `
       data-testid="all"
     >
       <h6
-        class="sc-bZQynM jheleg"
+        class="sc-gzVnrw fDlMua"
         type="h6"
       >
         all
