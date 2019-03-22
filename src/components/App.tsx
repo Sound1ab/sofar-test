@@ -35,7 +35,11 @@ export function App() {
               toggles={[TOGGLES.ROCK, TOGGLES.JAZZ, TOGGLES.FOLK, TOGGLES.ALL]}
               activeToggle={toggle}
             />
-            {loading ? 'loading' : <CardList events={data} />}
+            {loading ? (
+              'loading'
+            ) : (
+              <CardList events={data} activeToggle={toggle} />
+            )}
           </Container>
         </>
       </ThemeProvider>
