@@ -6,6 +6,10 @@ import { Card } from '../../molecules'
 
 const Style = styled.div`
   position: relative;
+
+  > div {
+    margin-top: ${({ theme }) => theme.spacing.xs};
+  }
 `
 
 interface ICardList {

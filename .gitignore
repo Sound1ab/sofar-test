@@ -38,6 +38,6 @@ yarn-error.log*
 .idea/vcs.xml
 .idea/watcherTasks.xml
 .idea/my-app.iml
-
+.idea/workspace.xml
 
 
