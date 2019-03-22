@@ -10,7 +10,7 @@ const Style = styled.div`
   display: flex;
   justify-content: flex-start;
 
-  & > * {
+  > * {
     padding: ${({ theme }) => theme.spacing.xs};
     display: flex;
     justify-content: center;
@@ -49,10 +49,10 @@ const Style = styled.div`
 `
 
 interface ICard {
-  dayNumeric: number
-  dayAlpha: string
-  month: string
-  location: string
+  dayNumeric?: number
+  dayAlpha?: string
+  month?: string
+  location?: string
 }
 
 export function Card({

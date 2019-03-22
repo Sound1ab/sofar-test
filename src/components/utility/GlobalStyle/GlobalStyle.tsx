@@ -143,6 +143,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 100%; /* 1 */
     line-height: 1.15; /* 1 */
     margin: 0; /* 2 */
+    border: none;
   }
   
   /**
@@ -187,6 +188,10 @@ export const GlobalStyle = createGlobalStyle`
   [type='reset']:-moz-focusring,
   [type='submit']:-moz-focusring {
     outline: 1px dotted ButtonText;
+  }
+  
+  button:focus {
+  outline: none
   }
   
   /**

@@ -6,6 +6,7 @@ export const theme = {
     text: {
       primary: '#171717',
       secondary: '#858585',
+      tertiary: '#ffffff',
     },
   },
   spacing: {
