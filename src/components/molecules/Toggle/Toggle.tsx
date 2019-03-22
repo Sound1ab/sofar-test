@@ -45,6 +45,7 @@ export function Toggle({ toggles, activeToggle, setToggle }: IToggle) {
     <Style>
       {toggles.map(toggle => (
         <button
+          data-testid={toggle}
           key={toggle}
           className={activeToggle === toggle ? 'toggle-active' : ''}
           onClick={setToggle.bind(null, toggle)}
