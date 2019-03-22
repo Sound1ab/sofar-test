@@ -1,11 +1,15 @@
 version: 2
 
+executors:
+  container:
+    docker:
+      - image: circleci/node:8.12-browsers-legacy
+    working_directory: /tmp
+
 jobs:
   # The build job
   build:
-    working_directory: ~/sofar-test
-    docker:
-      - image: circleci/node:8.12-browsers-legacy
+    executor: container
     steps:
       # Checkout the code from the branch into the working_directory
       - checkout
@@ -50,13 +54,17 @@ jobs:
           key: v1-public-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
           paths:
             - public
+      - persist_to_workspace:
+          root: /
+          paths:
+            - build
 
   # The deploy job
   deploy:
-    working_directory: ~/sofar-test
-    docker:
-      - image: circleci/node:8.12-browsers-legacy
+    executor: container
     steps:
+      - attach_workspace:
+          at: /tmp/build
       # Log the current branch
       - run:
           name: Show current branch
