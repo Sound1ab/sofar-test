@@ -81,9 +81,9 @@ jobs:
           name: Deploy to S3
           command: |
             if [ "${CIRCLE_BRANCH}" == "staging" ]; then
-                aws --region us-east-1 s3 sync public s3://sofar-staging/ --delete
+                aws --region us-east-1 s3 sync build s3://sofar-staging/ --delete
             elif [ "${CIRCLE_BRANCH}" == "master" ]; then
-                aws --region us-east-1 s3 sync public s3://sofar-master/ --delete
+                aws --region us-east-1 s3 sync build s3://sofar-master/ --delete
             fi
 
 workflows:
