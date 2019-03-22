@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:8.12-browsers-legacy
-    working_directory: /tmp
+    working_directory: ~/sofar-test
     steps:
       # Checkout the code from the branch into the working_directory
       - checkout
@@ -52,7 +52,7 @@ jobs:
           paths:
             - public
       - persist_to_workspace:
-          root: /
+          root: .
           paths:
             - build
 
@@ -60,10 +60,10 @@ jobs:
   deploy:
     docker:
       - image: circleci/node:8.12-browsers-legacy
-    working_directory: /tmp
+    working_directory: ~/sofar-test
     steps:
       - attach_workspace:
-          at: /tmp/build
+          at: .
       # Log the current branch
       - run:
           name: Show current branch
