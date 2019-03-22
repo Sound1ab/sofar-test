@@ -57,7 +57,7 @@ interface ICard {
 
 export function Card({ dayOfMonth, dayOfWeek, location, month }: ICard) {
   return (
-    <Style>
+    <Style data-testid="Card">
       <div className="card-cell card-date">
         <Heading type="h2">{dayOfMonth}</Heading>
         <Heading type="h6">{month}</Heading>

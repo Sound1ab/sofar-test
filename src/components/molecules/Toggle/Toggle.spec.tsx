@@ -2,9 +2,12 @@ import React from 'react'
 import { TOGGLES } from '../../../enums'
 import { render } from '../../../test-utils'
 import { Toggle } from './Toggle'
+import { cleanup } from 'react-testing-library'
 
 const MOCK_TOGGLE = TOGGLES.FOLK
 const MOCK_SET_TOGGLE = jest.fn()
+
+afterEach(cleanup)
 
 describe('Toggle.tsx', () => {
   test('toggle matches snapshot', () => {
