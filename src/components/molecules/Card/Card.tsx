@@ -49,27 +49,22 @@ const Style = styled.div`
 `
 
 interface ICard {
-  dayNumeric?: number
-  dayAlpha?: string
-  month?: string
-  location?: string
+  dayOfMonth: number
+  dayOfWeek: string
+  month: string
+  location: string
 }
 
-export function Card({
-  dayNumeric = 13,
-  dayAlpha = 'Thursday',
-  location = 'WhiteChapel',
-  month = 'OCT',
-}: ICard) {
+export function Card({ dayOfMonth, dayOfWeek, location, month }: ICard) {
   return (
     <Style>
       <div className="card-cell card-date">
-        <Heading type="h2">{dayNumeric}</Heading>
+        <Heading type="h2">{dayOfMonth}</Heading>
         <Heading type="h6">{month}</Heading>
       </div>
       <div className="card-cell card-location">
         <Heading type="h6">
-          <span className="card-highlight">{dayAlpha}</span>
+          <span className="card-highlight">{dayOfWeek}</span>
         </Heading>
         <Heading type="h2">{location}</Heading>
       </div>

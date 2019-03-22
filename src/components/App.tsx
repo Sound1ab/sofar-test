@@ -11,6 +11,8 @@ export function App() {
   const [data, loading] = useData()
   const [toggle, setToggle] = useState(TOGGLES.ALL)
 
+  console.log(data)
+
   function handleToggle(
     activeToggle: TOGGLES,
     e: React.MouseEvent<HTMLElement>
