@@ -5,5 +5,5 @@ export const Image = styled.img<{ src: string }>`
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: ${({ theme }) => theme.spacing.xxl};
+  height: 100%;
 `

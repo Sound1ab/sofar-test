@@ -12,6 +12,7 @@ interface IHeading {
   type: headingType
   marginBottom?: boolean
   marginTop?: boolean
+  className?: string
 }
 
 const StyledHeading = styled('h1')<IHeading>`
