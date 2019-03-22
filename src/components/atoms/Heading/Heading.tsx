@@ -6,7 +6,7 @@ type textTransformType = 'lowercase' | 'uppercase' | 'none'
 type textAlignType = 'left' | 'center' | 'right'
 
 interface IHeading {
-  children: any,
+  children: any
   textTransform?: textTransformType
   textAlign?: textAlignType
   type: headingType

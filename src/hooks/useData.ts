@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-export function useData(url = 'shows.json') {
-  const [data, setData] = useState([])
+export function useData<T>(url = 'shows.json'): [T | [], boolean] {
+  const [data, setData] = useState<T | []>([])
   const [loading, setLoading] = useState(true)
 
   async function fetchUrl() {

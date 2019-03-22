@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import { GoogleFont, TypographyStyle } from 'react-typography'
 import { TOGGLES } from '../enums'
 import { useData } from '../hooks'
+import { IEvent } from '../interfaces'
 import { typography } from '../theme/typography'
 import { Container, Heading } from './atoms'
-import { Card, Toggle } from './molecules'
+import { Toggle } from './molecules'
+import { CardList } from './organism'
 import { GlobalStyle, ThemeProvider } from './utility'
 
 export function App() {
-  const [data, loading] = useData()
+  const [data, loading] = useData<IEvent[]>()
   const [toggle, setToggle] = useState(TOGGLES.ALL)
-
-  console.log(data)
 
   function handleToggle(
     activeToggle: TOGGLES,
@@ -35,7 +35,7 @@ export function App() {
               toggles={[TOGGLES.ROCK, TOGGLES.JAZZ, TOGGLES.FOLK, TOGGLES.ALL]}
               activeToggle={toggle}
             />
-            <Card />
+            {loading ? 'loading' : <CardList events={data} />}
           </Container>
         </>
       </ThemeProvider>
