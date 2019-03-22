@@ -1,15 +1,15 @@
 version: 2
 
 executors:
-  container:
+  my-executor:
     docker:
-      - image: circleci/node:8.12-browsers-legacy
+      - image: buildpack-deps:jessie
     working_directory: /tmp
 
 jobs:
   # The build job
   build:
-    executor: container
+    executor: my-executor
     steps:
       # Checkout the code from the branch into the working_directory
       - checkout
@@ -61,7 +61,7 @@ jobs:
 
   # The deploy job
   deploy:
-    executor: container
+    executor: my-executor
     steps:
       - attach_workspace:
           at: /tmp/build
